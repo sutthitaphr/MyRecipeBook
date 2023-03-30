@@ -1,0 +1,22 @@
+.image_col{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.image_row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+p.para1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+p.para2{
+    font-weight: bold;
+    font-size: 30px;
+}
