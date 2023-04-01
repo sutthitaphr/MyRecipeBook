@@ -6,7 +6,7 @@ class UserController < ApplicationController
 
     #This method is implemented to prevent SQL Injection
     def create
-        User.where(["email = ?", "#{params[:email]}"])
+        User.where(["email = ?", {params[:email]}])
     end
 end
   
