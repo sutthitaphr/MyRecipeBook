@@ -1,0 +1,20 @@
+
+<!--Create a table to display the items-->
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Recipe Name</th>
+      <th scope="col">Cooking Length</th>
+      <th scope="col" style="padding-right:60px">Ingredients</th>
+      <th scope="col"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= recipe.recipe_name %></td>
+      <td><%= recipe.cooking_length %></td>
+      <td><%= recipe.ingred_no %></td>
+      <td><%= link_to "Show this Recipe", recipe %></td>
+    </tr>
+  </tbody>
+</table>

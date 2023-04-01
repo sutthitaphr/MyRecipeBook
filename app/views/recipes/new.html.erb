@@ -1,0 +1,16 @@
+<h1>New Recipe</h1>
+
+<% if current_user %>
+
+<!--If the user is signed in show the forms below-->
+<%= render "form", recipe: @recipe %>
+<% else%>
+
+  <!--If the user is not signed in , alert and show the content below-->
+  <p>You must Register or Sign In to create a new recipe</p>
+<% end %>
+<br>
+
+<div>
+  <%= link_to "Back to Recipes", recipes_path %>
+</div>
