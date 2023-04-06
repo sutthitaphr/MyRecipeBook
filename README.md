@@ -1,23 +1,14 @@
-# README
+# Hashin Password
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+please uncomment line 6 to line 13 to see the hashing of password
 
-Things you may want to cover:
+/models/user.rb
+  #Using hash method for securing purpose
+  def password
+   @password ||= Password.new(password_hash)
+  end
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+  def password=(new_password)
+    @password = Password.create(new_password)
+    self.password_hash = @password
+  end
