@@ -1,6 +1,6 @@
 # Hashin Password
 
-please uncomment line 6 to line 13 to see the hashing of password
+Please uncomment line 6 to line 13 to see the hashing of password.
 
 /models/user.rb
   #Using hash method for securing purpose
